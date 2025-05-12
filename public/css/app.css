@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+    font-family: "Poppins", serif;
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+.bg-img-header {
+    min-height: 55vh;
+    position: relative;
+    background-image: url("/image/monika-grabkowska-P1aohbiT-EY-unsplash.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.bg-img-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s;
+}
+
+label {
+    color: gray;
+}
+
+header nav ul li {
+    position: relative;
+}
+
+footer .footer p {
+    position: relative;
+}
+
+header nav ul li::before,
+footer .footer p::before {
+    position: absolute;
+    transition: 0.4s;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 3px;
+    background-color: beige;
+}
+
+header nav ul li:hover::before,
+footer .footer p:hover::before {
+    width: 100%;
+}
+
+footer img:hover {
+    transform: translateY(-10px);
+}
+
+.berita-lainnya .card {
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.berita-lainnya .card:hover {
+    background-color: azure;
+    transform: translateY(-10px);
+}
+
+.berita-lainnya .card img {
+    height: 200px;
+}
+
+.berita-lainnya .card .more-link {
+    color: #ffc107;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: 0.5s;
+}
+
+.berita-lainnya .card .more-link:hover {
+    color: #ffc107;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-decoration-color: #ffc107;
+    text-decoration: underline;
+}
+
+.page-item .page-link {
+    color: #ffc107;
+}
+
+.page-item.active .page-link {
+    background-color: #ffc107;
+    color: white;
+    border-color: #ffc107;
+}
+
+ul.pagination {
+    margin: 0 !important;
+}
+
+.star-rating input[type="radio"] {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.star-rating input[type="radio"]:checked ~ label,
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+    color: #ffc107;
+}
+
+@media (max-width: 576px) {
+    .px-custom {
+        padding-inline: 22px;
+    }
+
+    .gallery .gallery-item {
+        width: 100%;
+        max-height: 250px;
+    }
+}
+
+@media (min-width: 576px) {
+    .px-auto {
+        padding-inline: 12px;
+    }
+}

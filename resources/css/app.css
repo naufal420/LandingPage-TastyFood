@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .filament-button:hover {
+    color: #ff2d20 !important;
+    background-color: #ff2d20 !important;
+    border-color: #ff2d20 !important;
+} */
+
+.filament-modal-close-button {
+    background-color: #dc2626 !important; /* Warna merah */
+    color: white !important;
+}
